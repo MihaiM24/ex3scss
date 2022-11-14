@@ -1,0 +1,56 @@
+.bigbox {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+}
+
+.center {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+}
+
+.box1 {
+  border: 1px solid green;
+  padding: 8px;
+  color: blue;
+  font-size: toRem;
+}
+
+.box2 {
+  border: 1px solid green;
+  padding: 8px;
+  color: red;
+  font-size: toRem;
+}
+
+.box3 {
+  border: 1px solid green;
+  padding: 8px;
+  color: blue;
+  font-size: toRem;
+}
+
+.box4 {
+  border: 1px solid green;
+  padding: 8px;
+  color: red;
+  font-size: toRem;
+}
+
+.top {
+  align-self: center;
+  color: green;
+  text-decoration: underline blue;
+}
+
+.low {
+  margin: 20px;
+  margin-top: 0px;
+  border: 1px solid blue;
+  padding: 8px;
+  color: green;
+  font-size: 24px;
+}
+
+/*# sourceMappingURL=style.css.map */
