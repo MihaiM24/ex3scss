@@ -7,35 +7,31 @@
 .center {
   display: flex;
   flex-direction: row;
-  margin: 20px;
+  margin: 1.25rem;
 }
 
 .box1 {
   border: 1px solid green;
-  padding: 8px;
   color: blue;
-  font-size: toRem;
+  padding: 1rem;
 }
 
 .box2 {
-  border: 1px solid green;
-  padding: 8px;
   color: red;
-  font-size: toRem;
+  border: 1px solid green;
+  padding: 1rem;
 }
 
 .box3 {
   border: 1px solid green;
-  padding: 8px;
   color: blue;
-  font-size: toRem;
+  padding: 1rem;
 }
 
 .box4 {
-  border: 1px solid green;
-  padding: 8px;
   color: red;
-  font-size: toRem;
+  border: 1px solid green;
+  padding: 1rem;
 }
 
 .top {
@@ -45,12 +41,12 @@
 }
 
 .low {
-  margin: 20px;
+  margin: 1.25rem;
   margin-top: 0px;
   border: 1px solid blue;
-  padding: 8px;
   color: green;
-  font-size: 24px;
+  font-size: 1.5rem;
+  padding: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

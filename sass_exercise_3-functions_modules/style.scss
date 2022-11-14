@@ -1,62 +1,54 @@
 @use "module.scss" as module;
-@use "function.scss" as f;
-
-$color: module.$md-color;
-$bd-color: module.$md-bd-color;
-$font-size: toRem;
-
-@mixin border-color($bd-color){
-    border: 1px solid $bd-color;
-}
-@mixin text-style($color){
-    padding: 8px;
-    color: $color;
-    font-size: $font-size;
-}
-@mixin footer-style($color){
-    padding: 8px;
-    color: $color;
-    font-size: 24px;
-}
+@use 'sass:math';
+@use "functions.scss" as f;
+$margin-size: 20;
+$footer-font-size: 24;
+$padding-size: 16;
+@function toRem($value) {
+    $remValue: ($value / 16) + rem; 
+    @return $remValue;
+  }
 .bigbox{
     display: flex;
     flex-direction: column;
-    $bd-color: red;
-    @include border-color($bd-color);
+    border: module.$md-big-border;
 }
 .center{
     display: flex;
     flex-direction: row;
-    margin: 20px;
+    margin: toRem($margin-size);
 }
 .box1{
-    @include border-color($bd-color);
-    @include text-style($color);
+    border: module.$md-small-border;
+    color: module.$md-color;
+    padding: toRem($padding-size);
 }
 .box2{
-    @include border-color($bd-color);
-    $color: red;
-    @include text-style($color);
+    color: module.$md-red-color;
+    border: module.$md-small-border;
+    padding: toRem($padding-size);
+
 }
 .box3{
-    @include border-color($bd-color);
-    @include text-style($color);
+    border: module.$md-small-border;
+    color: module.$md-color;
+    padding: toRem($padding-size);
 }
 .box4{
-    @include border-color($bd-color);
-    $color: red;
-    @include text-style($color);
+    color: module.$md-red-color;
+    border: module.$md-small-border;
+    padding: toRem($padding-size);
 }
 .top{
     align-self: center;
-    color: $bd-color;
+    color: module.$md-bd-color;
     text-decoration: underline blue;
 }
 .low{
-    margin: 20px;
+    margin: toRem($margin-size);
     margin-top: 0px;
-    $bd-color: $color;
-    @include border-color($bd-color);
-    $color: green;
-    @include footer-style($color);
+    border: module.$md-footer-border;
+    color: module.$md-bd-color;
+    font-size: toRem($footer-font-size);
+    padding: toRem($padding-size);
 }
