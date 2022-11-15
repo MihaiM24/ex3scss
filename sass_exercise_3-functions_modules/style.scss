@@ -4,10 +4,7 @@
 $margin-size: 20;
 $footer-font-size: 24;
 $padding-size: 16;
-@function toRem($value) {
-    $remValue: ($value / 16) + rem; 
-    @return $remValue;
-  }
+
 .bigbox{
     display: flex;
     flex-direction: column;
@@ -16,28 +13,28 @@ $padding-size: 16;
 .center{
     display: flex;
     flex-direction: row;
-    margin: toRem($margin-size);
+    margin: f.Torem($margin-size);
 }
 .box1{
     border: module.$md-small-border;
     color: module.$md-color;
-    padding: toRem($padding-size);
+    padding: f.Torem($padding-size);
 }
 .box2{
     color: module.$md-red-color;
     border: module.$md-small-border;
-    padding: toRem($padding-size);
+    padding: f.Torem($padding-size);
 
 }
 .box3{
     border: module.$md-small-border;
     color: module.$md-color;
-    padding: toRem($padding-size);
+    padding: f.Torem($padding-size);
 }
 .box4{
     color: module.$md-red-color;
     border: module.$md-small-border;
-    padding: toRem($padding-size);
+    padding: f.Torem($padding-size);
 }
 .top{
     align-self: center;
@@ -45,10 +42,10 @@ $padding-size: 16;
     text-decoration: underline blue;
 }
 .low{
-    margin: toRem($margin-size);
+    margin: f.Torem($margin-size);
     margin-top: 0px;
     border: module.$md-footer-border;
     color: module.$md-bd-color;
-    font-size: toRem($footer-font-size);
-    padding: toRem($padding-size);
+    font-size: f.Torem($footer-font-size);
+    padding: f.Torem($padding-size);
 }
